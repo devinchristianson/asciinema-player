@@ -14,6 +14,7 @@
     "dist"
   ],
   "scripts": {
+    "prepare": "npm run build", 
     "build": "rollup -c --environment production",
     "bundle": "rollup -c rollup.config.bundle.mjs --environment production && lessc src/less/asciinema-player.less >dist/bundle/asciinema-player.css",
     "test": "echo \"Error: no test specified\" && exit 1"
